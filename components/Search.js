@@ -22,7 +22,15 @@ Search = React.createClass({
   
 
 render: function() {
-    var styles = {fontSize: '1.5em', width: '90%', maxWidth: '350px'};
+    var styles = {
+      fontSize: '1em', 
+      width: '90%', 
+      maxWidth: '350px', 
+      margin: '20px',
+      padding: '10px',
+      borderRadius: '30px',
+      border: 'none'
+    };
 
     return (<input
              type='text'

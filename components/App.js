@@ -1,4 +1,4 @@
-var GIPHY_API_URL = 'https://api.giphy.com/v1/gifs/search?api_key=b5Wvp99gWl4koHoJ8NXP8JSSKUl6DzLg&q=&limit=25&offset=0&rating=G&lang=en';
+var GIPHY_API_URL = 'https://api.giphy.com';
 var GIPHY_PUB_KEY = 'MJVtf3FealwHXNOXdSIO10ZSkIbYAK90';
 
 App = React.createClass({
@@ -50,9 +50,9 @@ App = React.createClass({
     
         return (
           <div style={styles}>
-                <h1>Wyszukiwarka GIFów!</h1>
-                <p>Znajdź gifa na  
-                    <a href='http://giphy.com'> giphy </a>
+                <h1 style={{color: '#4e43a7db'}}>Wyszukiwarka GIFów!</h1>
+                <p style={{lineHeight: '30px'}}>Znajdź gifa na  
+                    <a href='http://giphy.com'> giphy. </a><br/>
                       Naciskaj enter, aby pobrać kolejne gify.
                 </p>
                 <Search onSearch={this.handleSearch}/>
